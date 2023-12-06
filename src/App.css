@@ -11,8 +11,43 @@
   border: none;
   width: 77px;
   height: 50px;
+  margin: 20px;
 
+
+
+}
+
+.timer-blue,
+.timer-green{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.timer-text{
   
+  font-family: 'Inter';
+  font-size: 4rem;
+  align-self: center;
+  text-align: center;
+}
+
+.timer-green p {
+background-color: white;
+border: 10px solid #3CC96C;
+border-radius: 10px;
+width: 200px;
+padding: 25px;
+
+}
+
+.timer-blue p{
+  background-color: white;
+  border: 10px solid #2F40DB;
+  border-radius: 10px;
+  width: 200px;
+  padding: 25px;
 
 }
 

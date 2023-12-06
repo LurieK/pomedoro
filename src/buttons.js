@@ -1,26 +1,4 @@
-//research:
-//how to set a timer Date.Time??
 
-//start a timer
-//on click
-//check what timer was running
-//start the opposite timer
-//counts down to 0
-//when it's 0 start next timer
-
-//refresh countDown is saved, state of break and work, and timeWorked is saved
-
-//need state to hold each timer
-// break, setBreak = useState(false)
-// work setWork = useState(false)
-// countDown, setCountDown = useState(25min)
-//start is clicked 
-//work is set to true
-//countDownFunction begins
-//if countDown === 0{
-// setBreak(true)
-// setWork(false)
-//} 
 
 import React, { useState, useEffect } from 'react'
 import Timer from './timer'
@@ -75,6 +53,10 @@ const Buttons= ()=>{
       <button onClick={handlePause}>Pause</button>
       <button onClick={isActive ? handleRestart : handlePlay}>{isActive? 'restart' : 'play'}</button>
       </div>
+      <Tracker
+        working = {working}
+        
+      />
         
     </div>
     

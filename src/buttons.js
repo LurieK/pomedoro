@@ -1,7 +1,9 @@
 
 
-import React, { useState, useEffect } from 'react'
-import Timer from './timer'
+import React, { useState, useEffect } from 'react';
+import Timer from './timer';
+import Tracker from './tracker';
+
 const Buttons= ()=>{
   const workDuration = 10; // 25 minutes in seconds
   const breakDuration = 5; // 5 minutes in seconds
@@ -55,9 +57,9 @@ const Buttons= ()=>{
       </div>
       <Tracker
         working = {working}
-        
+        active= {isActive}
+
       />
-        
     </div>
     
     )

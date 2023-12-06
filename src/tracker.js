@@ -1,21 +1,31 @@
 //useRef
-//everytime the counter hits zero
-//add 5 or 25 depending on what it just finished 
+//hold a counter
+//hits zero add 25, hits zero add 5, and repeat
 //return the total 
+import React from 'react'
+import {useRef, useEffect} from 'react'
 
 const Tracker=(props)=> {
 
-function totalTime(){
+    const totalTimeRef = useRef(-50)
 
-
-}
-
+    useEffect(()=> {
+        totalTimeRef.current += props.working ? 25 :5;
+    
+    }, [props.working]);
+    
 
 return(
 
     <div>
-        <p>You've been working {totalTime} hours!</p>
+        <p>You've been working</p>
+        <p>{!props.active ? '0:00' :
+        ({Math.floor(totalTimeRef.current / 60)}:{String(totalTimeRef.current % 60).padStart(2, '0')}) hours!
+        
+        }</p>
     </div>
 )
 
 }
+
+export default Tracker

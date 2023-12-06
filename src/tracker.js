@@ -18,11 +18,12 @@ const Tracker=(props)=> {
 return(
 
     <div>
-        <p>You've been working</p>
-        <p>{!props.active ? '0:00' :
-        ({Math.floor(totalTimeRef.current / 60)}:{String(totalTimeRef.current % 60).padStart(2, '0')}) hours!
-        
-        }</p>
+        <p>You've been working 
+        {
+        !props.active ? 
+        ' 0:00 hours!' :
+        ` ${Math.floor(totalTimeRef.current / 60)}:${String(totalTimeRef.current % 60).padStart(2, '0')} hours!`
+    }</p>
     </div>
 )
 

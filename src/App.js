@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Buttons from './buttons'
-import Timer from './timer';
-import Tracker from './tracker';
-import Ding from './ding'
-import Goal from './goal'
+import Buttons from './components/buttons'
+import Timer from './components/timer';
+import Tracker from './components/tracker';
+import Ding from './components/ding'
+import Goal from './components/goal'
 
 import React, {useState, useEffect} from 'react'
 
 function App() {
-    const workDuration = 10; // 25 minutes in seconds
-  const breakDuration =5; // 5 minutes in seconds
+    const workDuration = 25; // 25 minutes in seconds
+  const breakDuration =5*60; // 5 minutes in seconds
   const [working, setworking] = useState(true);
   const [countDownTime, setCountDownTime] = useState(workDuration);
   const [isActive, setIsActive] = useState(false);

@@ -9,7 +9,7 @@ const Buttons= (props)=>{
       <div>
       
       <button onClick={props.onPause}>Pause</button>
-      <button onClick={props.active ? props.onRestart : props.onPlay}>{props.active? 'restart' : 'Play'}</button>
+      <button onClick={props.active ? props.onRestart : props.onPlay}>{props.active? 'Restart' : 'Play'}</button>
       </div>
     </div>
     

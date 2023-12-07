@@ -1,7 +1,7 @@
-import ding from './call-to-attention-123107.mp3'
+import ding from '../call-to-attention-123107.mp3'
 import React, {useState} from 'react'
-import muteImg from './volume_off_FILL0_wght400_GRAD0_opsz24.png'
-import soundImg from './volume_up_FILL0_wght400_GRAD0_opsz24.png'
+import muteImg from '../volume_off_FILL0_wght400_GRAD0_opsz24.png'
+import soundImg from '../volume_up_FILL0_wght400_GRAD0_opsz24.png'
 
 
 const Ding = (props) =>{

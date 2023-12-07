@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Pomedoro App - Component Overview README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+The Pomedoro app is a custom-built Pomodoro timer designed for enhanced personal productivity. It integrates features such as a work time log, pause functionality, and goal setting. This README provides a walkthrough of the key components that make up the app.
 
-In the project directory, you can run:
+<img src="link-to-your-image" width="300" align="right">
 
-### `npm start`
+![Working View]('./src/Screenshot 2023-12-07 at 5.49.42 PM.png')
+*Caption: The working interface of the Pomedoro app.*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Break View]('./src/Screenshot 2023-12-07 at 5.49.18 PM.png')
+*Caption: Break in the Pomedoro app.*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Component Breakdown
 
-### `npm test`
+### App.js (Main Component)
+- **Description**: Serves as the root component that encapsulates all other components of the application.
+- **Key Features**: Manages the main state and serves as the entry point for the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Buttons.js (Control Buttons)
+- **Description**: Handles the rendering of control buttons like Start/Restart and Pause.
+- **Functionality**: 
+  - Start/Restart Button: Initiates or restarts the timer.
+  - Pause Button: Allows the user to pause the ongoing timer.
 
-### `npm run build`
+### Ding.js (Alert Sound)
+- **Description**: Manages the sound alert functionality for the timer.
+- **Implementation**: Plays an audio clip when the timer reaches zero, signaling the end of a Pomodoro session.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Goal.js (Goal Setting)
+- **Description**: Provides an interface for users to set and display their goals.
+- **Usage**: Helps users stay focused by displaying their current goal during the Pomodoro session.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Timer.js (Pomodoro Timer)
+- **Description**: The core component that implements the Pomodoro timer.
+- **Functionality**: 
+  - Uses `useState` to manage timer state.
+  - Implements `useEffect` for timer countdown functionality.
+  - Handles the display of the remaining time in the Pomodoro session.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tracker.js (Working Time Log)
+- **Description**: Tracks and logs the total time a user has spent working.
+- **Features**: 
+  - Logs time upon completion of each Pomodoro session.
+  - Displays the accumulated time to give users insight into their work duration.
 
-### `npm run eject`
+## React Hooks Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **useState**: Manages state in a functional component. Used across multiple components for tracking states like timer duration, pause status, and goals.
+- **useEffect**: Executes side effects in functional components. Used in Timer.js for handling countdown logic.
+- **useRef**: Accesses DOM elements directly. Useful in managing focus without re-rendering components.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation and Running the App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository: `git clone https://github.com/LurieK/pomedoro.git`
+2. Move to the project directory: `cd pomedoro`
+3. Install dependencies: `npm install`
+4. Start the application: `npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Conclusion
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

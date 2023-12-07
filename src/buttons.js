@@ -3,10 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import Timer from './timer';
 import Tracker from './tracker';
+import Ding from './ding'
+import Goal from './goal'
 
 const Buttons= ()=>{
-  const workDuration = 25*60; // 25 minutes in seconds
-  const breakDuration = 5*60; // 5 minutes in seconds
+  const workDuration = 10; // 25 minutes in seconds
+  const breakDuration =5; // 5 minutes in seconds
   const [working, setworking] = useState(true);
   const [countDownTime, setCountDownTime] = useState(workDuration);
   const [isActive, setIsActive] = useState(false);
@@ -55,11 +57,15 @@ const Buttons= ()=>{
       <button onClick={handlePause}>Pause</button>
       <button onClick={isActive ? handleRestart : handlePlay}>{isActive? 'restart' : 'play'}</button>
       </div>
+      <Goal/>
       <Tracker
         working = {working}
         active= {isActive}
 
       />
+      <Ding 
+        time = {countDownTime}
+        />
     </div>
     
     )

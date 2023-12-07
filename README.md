@@ -4,16 +4,20 @@
 
 The Pomedoro app is a custom-built Pomodoro timer designed for enhanced personal productivity. It integrates features such as a work time log, pause functionality, and goal setting. This README provides a walkthrough of the key components that make up the app.
 
-<p align="center">
-  <img src="./src/working_img.png" alt="Working View" width="300"/>
-  <br>
-  <em>Caption: The working interface of the Pomedoro app.</em>
-
-  <img src="./src/break_img.png" alt="Break View" width="300"/>
-  <br>
-  <em>Caption: Break in the Pomedoro app.</em>
-</p>
-
+<table>
+  <tr>
+    <td align="center">
+      <img src="./src/working_img.png" alt="Working View" width="300"/>
+      <br>
+      <em>Caption: The working interface of the Pomedoro app.</em>
+    </td>
+    <td align="center">
+      <img src="./src/break_img.png" alt="Break View" width="300"/>
+      <br>
+      <em>Caption: Break in the Pomedoro app.</em>
+    </td>
+  </tr>
+</table>
 ## Component Breakdown
 
 ### App.js (Main Component)

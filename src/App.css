@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  
+}
+
+body{
+background-color: #f4f4f4 ;
+}
+
+p{
+  font-family: Inter;
+  font-weight: 700;
 }
 
 .start button{
@@ -31,9 +41,10 @@
   font-size: 4rem;
   align-self: center;
   text-align: center;
+  font-weight: 300;
 }
 
-.timer-green p {
+.timer-green h3{
 background-color: white;
 border: 10px solid #3CC96C;
 border-radius: 10px;
@@ -42,7 +53,7 @@ padding: 25px;
 
 }
 
-.timer-blue p{
+.timer-blue h3{
   background-color: white;
   border: 10px solid #2F40DB;
   border-radius: 10px;

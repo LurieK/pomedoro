@@ -5,8 +5,8 @@ import Timer from './timer';
 import Tracker from './tracker';
 
 const Buttons= ()=>{
-  const workDuration = 10; // 25 minutes in seconds
-  const breakDuration = 5; // 5 minutes in seconds
+  const workDuration = 25*60; // 25 minutes in seconds
+  const breakDuration = 5*60; // 5 minutes in seconds
   const [working, setworking] = useState(true);
   const [countDownTime, setCountDownTime] = useState(workDuration);
   const [isActive, setIsActive] = useState(false);

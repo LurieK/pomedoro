@@ -13,7 +13,7 @@ p{
 }
 
 .start button{
-  background-color: #187321;
+  background-color: #3898ff;
   color: white;
   font-family: "Inter";
   font-size: 16px;
@@ -72,10 +72,10 @@ form{
 
 .goal-form button{
 
-  background-color: #2f40db;
+  background-color: #3898ff;
   width: 77px;
   height: 25px;
-  padding: 0;
+  padding: 0 3px;
   margin:0; 
 }
 
@@ -87,5 +87,7 @@ form{
   width: 300px;
 
 }
+
+
 
 

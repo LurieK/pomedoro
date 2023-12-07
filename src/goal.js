@@ -21,7 +21,7 @@ const Goal=()=>{
 
     return(
         <div className='goal-form'>
-            <h4 >Goal for this session</h4>
+            <h4 >Goal for this session : </h4>
             <h3 className='goal-written'>{goal}</h3>
             <form
             className='goalText'
@@ -30,7 +30,7 @@ const Goal=()=>{
           <input
             type="text"
             onChange={(e) => setGoalText(e.target.value)}
-            placeholder='type it here'
+            placeholder=' type your goal here'
             value={goalText}
           />
           <button type="submit">Enter</button>

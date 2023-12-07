@@ -55,7 +55,7 @@ const Buttons= ()=>{
         countDown={countDownTime}
         />
       <button onClick={handlePause}>Pause</button>
-      <button onClick={isActive ? handleRestart : handlePlay}>{isActive? 'restart' : 'play'}</button>
+      <button onClick={isActive ? handleRestart : handlePlay}>{isActive? 'restart' : 'Play'}</button>
       </div>
       <Goal/>
       <Tracker

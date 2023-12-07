@@ -15,12 +15,14 @@ const Goal=()=>{
           }
 
         setGoal(goalText)
+        setGoalText('')
     }
 
 
     return(
-        <div>
-            <h4>Goal for this session</h4>
+        <div className='goal-form'>
+            <h4 >Goal for this session</h4>
+            <h3 className='goal-written'>{goal}</h3>
             <form
             className='goalText'
             onSubmit={(e) => handleSubmit(e)}
@@ -33,6 +35,8 @@ const Goal=()=>{
           />
           <button type="submit">Enter</button>
         </form>
+
+        
         </div>
     )
 }

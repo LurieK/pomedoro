@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
   
 }
 
@@ -12,18 +16,20 @@ p{
   font-weight: 700;
 }
 
-.start button{
+button{
   background-color: #3898ff;
   color: white;
   font-family: "Inter";
   font-size: 16px;
   font-weight: 700;
   border: none;
+}
+
+
+.start button{
   width: 77px;
   height: 50px;
   margin: 20px;
-
-
 
 }
 
@@ -71,11 +77,9 @@ form{
 }
 
 .goal-form button{
-
-  background-color: #3898ff;
   width: 77px;
   height: 25px;
-  padding: 0 3px;
+  padding: 0 4px;
   margin:0; 
 }
 
@@ -88,6 +92,13 @@ form{
 
 }
 
+.goal-form h4{
+  color: gray;
+}
 
+.goal-written{
+  font-size: 20px;
+  font-style: italic;
+}
 
 

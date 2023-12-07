@@ -6,10 +6,10 @@ The Pomedoro app is a custom-built Pomodoro timer designed for enhanced personal
 
 <img src="link-to-your-image" width="300" align="right">
 
-![Working View]('./src/Screenshot 2023-12-07 at 5.49.42 PM.png')
+![Working View](./src/working_img.png)
 *Caption: The working interface of the Pomedoro app.*
 
-![Break View]('./src/Screenshot 2023-12-07 at 5.49.18 PM.png')
+![Break View](./src/break_img.png)
 *Caption: Break in the Pomedoro app.*
 
 ## Component Breakdown

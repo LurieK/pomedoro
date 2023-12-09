@@ -8,17 +8,17 @@
 }
 
 body{
-background-color: #595454 ;
+background-color: #0b2434 ;
 }
 
 p{
   font-family: Inter;
   font-weight: 700;
-  color: whitesmoke;
+  color: white;
 }
 
 button{
-  background-color: #3898ff;
+  background-color: #5035FF;
   color: white;
   font-family: "Inter";
   font-size: 16px;
@@ -30,7 +30,7 @@ button{
 h1{
   font-family: 'Inter';
   margin-top: 20px;
-  color: whitesmoke;
+  color: white;
 
 
 }
@@ -40,7 +40,7 @@ h1{
   width: 77px;
   height: 50px;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
 
 }
 
@@ -61,11 +61,11 @@ h1{
   align-self: center;
   text-align: center;
   font-weight: 300;
-  color: whitesmoke;
+  color: black;
 }
 
 .timer-green h3{
-background-color: rgb(166 160 160);
+background-color: #f5f5f5;
 border: 10px solid #3CC96C;
 border-radius: 10px;
 width: 200px;
@@ -75,7 +75,7 @@ margin-top: 0;
 }
 
 .timer-blue h3{
-  background-color: rgb(166 160 160);
+  background-color: #f5f5f5;
   border: 10px solid #2F40DB;
   border-radius: 10px;
   width: 200px;
@@ -106,9 +106,9 @@ form{
   border: none;
   height: 25px;
   width: 300px;
-  background-color: rgb(130, 126, 126);;
-  color: white;
-  border-radius: 5px 0 0 5px;
+  background-color: #f5f5f5;
+  color: black;
+  border-radius: 2px 0 0 2px;
   
 
 }

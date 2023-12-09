@@ -9,7 +9,7 @@ import Goal from './components/goal'
 import React, {useState, useEffect} from 'react'
 
 function App() {
-    const workDuration = 25; // 25 minutes in seconds
+    const workDuration = 25*60; // 25 minutes in seconds
   const breakDuration =5*60; // 5 minutes in seconds
   const [working, setworking] = useState(true);
   const [countDownTime, setCountDownTime] = useState(workDuration);

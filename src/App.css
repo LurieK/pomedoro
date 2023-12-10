@@ -35,7 +35,9 @@ h1{
 
 }
 
-
+button{
+  cursor: pointer;
+}
 .start button{
   width: 77px;
   height: 50px;

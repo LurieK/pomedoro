@@ -7,10 +7,25 @@ import {useRef, useEffect} from 'react'
 
 const Tracker=(props)=> {
 
-    const totalTimeRef = useRef(-50)
+    const totalTimeRef = useRef(0);
+    const prevWorking = useRef(props.working)
 
     useEffect(()=> {
-        totalTimeRef.current += props.working ? 25 :5;
+
+        if (prevWorking.current === props.Working){
+            return
+        }
+
+        if (prevWorking.current=== true && props.Working === false){
+            totalTimeRef += 25
+        }
+
+        if (prevWorking.current === false && props.working === true){
+            totalTimeRef += 5
+        }
+    
+    prevWorking.current = props.working;
+
     
     }, [props.working]);
     

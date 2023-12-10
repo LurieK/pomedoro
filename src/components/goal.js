@@ -5,8 +5,7 @@ import React, {useState} from 'react'
 const Goal=()=>{
         const [goal, setGoal] = useState('')
         const [goalText, setGoalText] = useState('')
-        console.log(`here is my goalText ${goalText}`)
-        console.log(`here is the goal${goal}`)
+        
 
         const handleSubmit = (e) => {
             e.preventDefault();

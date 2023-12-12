@@ -28,24 +28,26 @@ function App() {
       const switchSession = !working;
       setworking(switchSession);
       setCountDownTime(switchSession ? workDuration : breakDuration);
-      setIsActive(true); // Optionally pause the timer on session switch
+      setIsActive(true); // continue timer for each session
     }
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [isActive, countDownTime, working]);
 
   const handlePause = () => {
-    setIsActive(false);
+    setIsActive(false);//stop timer and countdown
   };
 
   const handlePlay = () => {
-
+    //begin timer
     setIsActive(true);
   };
 
   const handleRestart = () => {
     setCountDownTime(working ? workDuration : breakDuration);
+    //based on what timer is running the time is reset to 00:00
     setIsActive(false);
+    //this will not effect the Tracker. 
   };
 
   return (

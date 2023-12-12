@@ -3,10 +3,12 @@ import React, {useState} from 'react'
 
 
 const Goal=()=>{
+
+      //states for checking the input value (goalText) and the submitted goal (goal)
         const [goal, setGoal] = useState('')
         const [goalText, setGoalText] = useState('')
         
-
+    //on submit the text in the input is set to goal
         const handleSubmit = (e) => {
             e.preventDefault();
             if (!goalText.trim()) {

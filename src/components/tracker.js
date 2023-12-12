@@ -6,8 +6,6 @@ const Tracker=(props)=> {
 
     const totalTimeRef = useRef(0);
     const prevWorking = useRef(props.working)
-    console.log(props.working)
-    
     
     useEffect(()=> {
     //is this the first time useEffect is running?

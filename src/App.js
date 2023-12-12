@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Buttons from './components/buttons'
 import Timer from './components/timer';
@@ -17,21 +17,25 @@ function App() {
 
   useEffect(() => {
     let interval = null;
-
+    //so long as the timer is active and countDownTime is greater then zero
+    //the interval will contine to decrease by one every second
     if (isActive && countDownTime > 0) {
       interval = setInterval(() => {
         setCountDownTime(countDownTime - 1); 
       }, 1000);
     }
-    
+    //once countDownTime hits zero working turns to false and the session switches to break (counting down from 5 minues)
+    //if it turns to true it counts then the timer tracks 25 mintues (workDuration)
     if (countDownTime === 0) {
       const switchSession = !working;
       setworking(switchSession);
       setCountDownTime(switchSession ? workDuration : breakDuration);
-      setIsActive(true); // continue timer for each session
+      setIsActive(true);
+      //Cleanup: Clear the interval when the component unmounts or before the useEffect runs again due to changes in its dependencies (isActive, countDownTime, working). 
+      //This prevents multiple intervals from running simultaneously and ensures that only the latest interval is active."
     }
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval); // Clear interval for new countdown
   }, [isActive, countDownTime, working]);
 
   const handlePause = () => {

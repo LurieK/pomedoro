@@ -4,30 +4,30 @@
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  
+
 }
 
-body{
-background-color: #0b2434 ;
+body {
+  background-color: #0b2434;
 }
 
-p{
+p {
   font-family: Inter;
   font-weight: 700;
   color: white;
 }
 
-button{
+button {
   background-color: #5035FF;
   color: white;
   font-family: "Inter";
   font-size: 16px;
   font-weight: 700;
   border: none;
-  
+
 }
 
-h1{
+h1 {
   font-family: 'Inter';
   margin-top: 20px;
   color: white;
@@ -35,10 +35,11 @@ h1{
 
 }
 
-button{
+button {
   cursor: pointer;
 }
-.start button{
+
+.start button {
   width: 77px;
   height: 50px;
   margin: 20px;
@@ -47,17 +48,17 @@ button{
 }
 
 .timer-blue,
-.timer-green{
+.timer-green {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  
+
 
 }
 
-.timer-text{
-  
+.timer-text {
+
   font-family: 'Inter';
   font-size: 4rem;
   align-self: center;
@@ -66,17 +67,17 @@ button{
   color: black;
 }
 
-.timer-green h3{
-background-color: #f5f5f5;
-border: 10px solid #3CC96C;
-border-radius: 10px;
-width: 200px;
-padding: 25px;
-margin-top: 0;
+.timer-green h3 {
+  background-color: #f5f5f5;
+  border: 10px solid #3CC96C;
+  border-radius: 10px;
+  width: 200px;
+  padding: 25px;
+  margin-top: 0;
 
 }
 
-.timer-blue h3{
+.timer-blue h3 {
   background-color: #f5f5f5;
   border: 10px solid #2F40DB;
   border-radius: 10px;
@@ -87,23 +88,23 @@ margin-top: 0;
 }
 
 
-form{
+form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row;
 }
 
-.goal-form button{
+.goal-form button {
   width: 77px;
   height: 25px;
   padding: 0 4px;
-  margin:0; 
+  margin: 0;
   border-radius: 0 5px 5px 0;
 }
 
-.goal-form input{
-  padding:0;
+.goal-form input {
+  padding: 0;
   margin: 0;
   border: none;
   height: 25px;
@@ -111,21 +112,21 @@ form{
   background-color: #f5f5f5;
   color: black;
   border-radius: 2px 0 0 2px;
-  
+
 
 }
 
-.goal-form h4{
+.goal-form h4 {
   color: rgb(208, 202, 202);
 }
 
-.goal-written{
+.goal-written {
   font-size: 20px;
   font-style: italic;
   color: white;
 }
 
-.mute-button svg{
-fill: white;
+.mute-button svg {
+  fill: white;
 
 }
